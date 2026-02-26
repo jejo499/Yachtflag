@@ -426,7 +426,7 @@ FACTORS = [
      "Cost appears straightforward but is often more nuanced than the advertised fee suggests. Some registries offer a low headline figure but layer on annual fees, inspection fees, compliance levies, and survey charges separately. The meaningful comparison is the total five-year cost of ownership. BVI's fee structure is transparent and all-inclusive — consistently among the lowest in the industry when viewed on this basis."),
 
     ("psc_whitelist", "PSC Whitelist / Grey / Black", 4, "Reputation & Legal Standing",
-     "The Paris MOU and Tokyo MOU publish white, grey, and black lists of flag states based on Port State Control inspection outcomes. A vessel's flag directly influences the frequency and intensity of inspections it faces in port. BVI maintains a consistent position on the Paris MOU white list, reflecting its commitment to quality shipping standards."),
+     "The Paris MOU and Tokyo MOU publish white, grey, and black lists of flag states based on Port State Control inspection outcomes. A vessel's flag directly influences the frequency and intensity of inspections it faces in port. "),
 
     ("reputation", "Flag Reputation", 5, "Reputation & Legal Standing",
      "Beyond the quantifiable PSC regime, a flag's perceived reputation influences how port authorities, customs officials, lenders, insurers, and counterparties treat a vessel. BVI, as a British Overseas Territory flying the Red Ensign, sits within the gold-standard Red Ensign Group alongside the UK and its Overseas Territories — a status that commands genuine respect across the global maritime community."),
@@ -553,7 +553,7 @@ def get_verdict(score):
     elif score >= 55:
         return "Good Fit", "#e65100"
     else:
-        return "Partial Fit — Consider Carefully", "#c62828"
+        return "Partial Fit", "#c62828"
 
 # ── Session state ─────────────────────────────────────────────────────────────
 if "page" not in st.session_state:
@@ -567,7 +567,7 @@ if "importances" not in st.session_state:
 st.markdown("""
 <div class="hero">
     <span class="ensign">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
-    <h1>BVI Flag Suitability Assessment</h1>
+    <h1>Flag Suitability Assessment</h1>
     <p class="subtitle">Personalised flag suitability analysis for yacht owners</p>
 </div>
 """, unsafe_allow_html=True)
@@ -898,23 +898,20 @@ elif st.session_state.page == "report":
             About the Developer
         </div>
         <p style="color:#2c3e50;font-size:0.95rem;line-height:1.8;margin-bottom:1rem;">
-            Jejo Joy started his career the way most maritime professionals do — on the ships themselves,
-            and then in the survey rooms of classification societies, standing at the intersection of
+            Jejo Joy - A naval architect. I started my career as a technical superintendent in an oil tanker management company,
+            and then a surevyor in classification society, standing at the intersection of
             steel, sea, and regulation. Over the years, that vantage point expanded: Flag State,
-            Port State Control, newbuilding supervision, dry-docking, ISM, ISPS, MLC — the full
+            Port State Control, newbuilding supervision, dry-docking, ISM, ISPS, MLC, III Code — the full
             arc of what it means to keep a vessel compliant, safe, and seaworthy.
         </p>
         <p style="color:#2c3e50;font-size:0.95rem;line-height:1.8;margin-bottom:1rem;">
-            Now, as a Naval Architect and Maritime Professional at the British Virgin Islands
-            Ship Registry, that experience finds its purpose in a different way —
-            helping owners, operators, and advisors navigate one of the most consequential decisions
-            in yacht ownership: the choice of flag.
+            Now, I am working as a Senior Ship Surveyor at the Virgin Islands
+            Shipping & Maritime Administration. I am an enthusiast of AI, Machine learning, algorithms, knowledge graph   
+            - and i believe the intersection of maritime knowledge and artificial intelligence is the one of the most underexplored and consequential spaces in the industry today.
         </p>
         <p style="color:#2c3e50;font-size:0.95rem;line-height:1.8;margin-bottom:1.5rem;">
             This tool is the result of a conviction that maritime expertise and modern technology
-            should work together — that the knowledge built up over decades at sea, in shipyards,
-            and in registry offices can be made accessible, structured, and useful to anyone facing
-            a complex decision. There is more to come.
+            should work together. There is more to come.
         </p>
         <a href="https://www.linkedin.com/in/jejo-j-b324a7a7/" target="_blank"
            style="display:inline-flex;align-items:center;gap:0.5rem;
